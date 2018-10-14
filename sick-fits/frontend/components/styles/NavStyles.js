@@ -34,9 +34,9 @@ const NavStyles = styled.ul`
       bottom: 0;
     }
     &:after {
+      content: '';
       height: 2px;
       background: red;
-      content: '';
       width: 0;
       position: absolute;
       transform: translateX(-50%);

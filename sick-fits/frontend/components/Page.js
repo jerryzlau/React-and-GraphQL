@@ -49,6 +49,11 @@ injectGlobal`
     line-height: 2;
     font-family: 'radnika_next';
   }
+
+  a {
+    text-decoration: none;
+    color: ${theme.black};
+  }
 `;
 
 class Page extends Component {
