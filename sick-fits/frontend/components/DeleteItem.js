@@ -19,8 +19,6 @@ class DeleteItem extends Component {
           id: this.props.id
         }
       });
-  
-      // console.log(res);
     }
   }
 
