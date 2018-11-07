@@ -22,8 +22,14 @@ type Mutation {
 }
 
 type Query {
-  items: [Item]! # returns an array of type ITEM
+  items(where: ItemWhereInput, 
+  orderBy: ItemOrderByInput, 
+  skip: Int, 
+  first: Int): [Item]! # returns an array of type ITEM
+
   item(where: ItemWhereUniqueInput!): Item # returns a single ITEM
+  
+  itemsConnection(where: ItemWhereInput): ItemConnection!
 }
 
 
